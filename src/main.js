@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createI18n } from 'vue-i18n'
+import VueSvgInlinePlugin from "vue-svg-inline-plugin";
 // import router from './router'
 
 import './assets/base.css'
@@ -14,6 +15,7 @@ const i18n = createI18n({
 })
 
 app.use(i18n);
+app.use(VueSvgInlinePlugin);
 //app.use(router);
 
 app.mount('#app');

@@ -1,28 +1,28 @@
-# pridex2
+# Pridex Analytics
 
-This template should help get you started developing with Vue 3 in Vite.
+Данный проект представляет собой прототип аналитического дашборда
 
-## Recommended IDE Setup
+[Demo](https://echarts.apache.org/en/index.html)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Особенности решения
+* Выполнено на фреймворке Vue.js 3
+* Использована библиотека визуализаций [Apache Echarts](https://echarts.apache.org/en/index.html)
+* Источник данных - Qlik Engine
+* Передача данных реализована через Web-API и Enigma.js
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Инсталляция приложения
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Компиляция и Hot-Reload для разработки
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Компиляция для продакшена
 
 ```sh
 npm run build

@@ -78,7 +78,7 @@ export default {
   width: 100% !important;
   height: 100% !important;
   margin: auto !important;
-  padding: 10px;
+  padding: 10px !important;
   box-sizing: border-box;
   background-color: #000000a3;
   transform: unset !important;

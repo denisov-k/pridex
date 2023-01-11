@@ -5,18 +5,26 @@
       <inline-svg :src="extraButton.icon" />
     </div>
     <div class="button" v-on:click="exportImage" v-if="exportImage" :title="$t('export_image')">
-      <inline-svg src='@/assets/widget/image.svg' />
+      <img v-svg-inline src="@/assets/widget/image.svg" />
+    </div>
+    <div class="button" v-on:click="onExpandClick" :title="expanded ? $t('collapse') : $t('expand')">
+      <img v-svg-inline src="@/assets/widget/expand.svg" v-if="!expanded" />
+      <img v-svg-inline src="@/assets/widget/collapse.svg" v-else />
     </div>
   </div>
 </template>
 
 <script>
 import api from "@/services/api";
+import image from "@/assets/widget/image.svg";
 
 import * as FileSaver from 'file-saver';
 
 export default {
   name: "WidgetDataExport",
+  components: {
+    image
+  },
   props: {
     title: String,
     exportURL: {
@@ -83,11 +91,12 @@ export default {
 }
 .button {
   aspect-ratio: 1;
-  height: 16px;
+  height: 14px;
   padding: 6px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  fill: #2a728e;
 }
 .button:hover {
   background-color: #00000025;

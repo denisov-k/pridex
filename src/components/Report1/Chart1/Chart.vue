@@ -78,7 +78,7 @@ export default {
           },*/
           markLine: {
             data: [{type: 'average', name: 'Avg'}],
-            label: {position: 'middle', fontSize: '1rem'}
+            label: {position: 'middle', fontSize: '12px'}
           }
         }
       ];
