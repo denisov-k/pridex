@@ -15,6 +15,9 @@ const onRemoveReportClick = () => {
 </script>
 
 <template>
+  <header>
+    <h3>Pridex Analytics</h3>
+  </header>
   <main>
     <div id="reports">
       <Report v-for="n in reportsCount" />
@@ -30,23 +33,24 @@ const onRemoveReportClick = () => {
 
 <style scoped>
   main {
+    width: 100%;
     height: 100%;
     overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #report::-webkit-scrollbar {
+  main::-webkit-scrollbar {
      width: 5px;
      height: 5px;
    }
 
-  #report::-webkit-scrollbar-track {
+  main::-webkit-scrollbar-track {
      background-color: black;
      border-radius: 25px;
    }
 
-  #report::-webkit-scrollbar-thumb {
+  main::-webkit-scrollbar-thumb {
      background: #4e4e4e;
      border-radius: 25px;
    }

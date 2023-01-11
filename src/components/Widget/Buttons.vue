@@ -2,14 +2,14 @@
   <div class="widget-buttons">
     <div class="button" v-for="(extraButton, ind) in extraButtons" :title="extraButton.title"
          v-on:click="extraButton.onClick" v-bind:key="ind">
-      <inline-svg :src="extraButton.icon" />
+      <img v-svg-inline :src="extraButton.icon" />
     </div>
-    <div class="button" v-on:click="exportImage" v-if="exportImage" :title="$t('export_image')">
-      <img v-svg-inline src="@/assets/widget/image.svg" />
+    <div class="button" v-on:click="exportImage" v-if="exportImage" title="Экспортировать снимок">
+      <img v-svg-inline src="@/assets/widget/image.svg" alt="Экспорт" />
     </div>
-    <div class="button" v-on:click="onExpandClick" :title="expanded ? $t('collapse') : $t('expand')">
-      <img v-svg-inline src="@/assets/widget/expand.svg" v-if="!expanded" />
-      <img v-svg-inline src="@/assets/widget/collapse.svg" v-else />
+    <div class="button" v-on:click="onExpandClick" :title="expanded ? 'Развернуть' : 'Свернуть'">
+      <img v-svg-inline src="@/assets/widget/expand.svg" v-if="!expanded"  alt="Экспорт"/>
+      <img v-svg-inline src="@/assets/widget/collapse.svg" v-else  alt="Экспорт"/>
     </div>
   </div>
 </template>

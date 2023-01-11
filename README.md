@@ -2,7 +2,7 @@
 
 Данный проект представляет собой прототип аналитического дашборда
 
-[Demo](https://echarts.apache.org/en/index.html)
+[Demo](https://test.codingstones.ru/)
 
 ## Особенности решения
 * Выполнено на фреймворке Vue.js 3
